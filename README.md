@@ -12,7 +12,7 @@ You will need to have installed `make` and `docker` to run it and start developi
 
 ## How does this work
 
-In the make file you will encounter some basic commands to get the project running. Probably the basic one being the `make start` as it's the one that will build&run your project.
+In the make file you will encounter some basic commands to get the project running. Probably the basic one being `make start` as it's the one that will build&run your project.
 
 It uses `cargo watch` to recompile and run your code each time it detects a change like in a typical "hot-swap" setup to make local development faster and easier. It's setup in a way that tries to prevent as much to recompile while coding.
 
