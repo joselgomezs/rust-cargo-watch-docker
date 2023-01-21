@@ -2,19 +2,19 @@
 
 ## About the project
 
-This project is just a simple dockerized dev environment for a Rust microservice enabled with cargo watch for some hot reloading action.
+This project is just a simple dockerized dev environment for a Rust microservice enabled with `cargo watch` for some hot reloading dev action.
 
-I used this project just for self-development to learn a bit from various topics and to have somewhat of a template for a rust microservice without much pretensions.
+I used this project just for self-development, to learn a bit from various topics and to have somewhat of a template for a rust microservice without much pretensions.
 
 ### Requisites for running it
 
-You will need to have instaled `make` and `docker` to run it and start developing with it. I developed it running it on Windows @ WSL2 so probably it should work anywhere without much hassle.
+You will need to have installed `make` and `docker` to run it and start developing with it. I developed it running it on Windows @ WSL2 so probably it should work anywhere without much hassle.
 
 ## How does this work
 
 In the make file you will encounter some basic commands to get the project running. Probably the basic one being the `make start` as it's the one that will build&run your project.
 
-It uses `cargo watch` tu recompile and run your code each time it detects a change like in a typical "hot-swap" setup to make local development faster and easier. It's setup in a way that tries to prevent as much to recompile while coding.
+It uses `cargo watch` to recompile and run your code each time it detects a change like in a typical "hot-swap" setup to make local development faster and easier. It's setup in a way that tries to prevent as much to recompile while coding.
 
 Make sure to have a `.env` file with the basic variables, you can use `.env.dist` for reference.
 
