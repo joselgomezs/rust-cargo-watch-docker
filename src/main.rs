@@ -11,7 +11,7 @@ async fn hello() -> impl Responder  {
 async fn main() -> std::io::Result<()> {
     let port = match env::var("PORT") {
         Ok(value) => value.parse::<u16>().unwrap(),
-        Err(e) => panic!("PORT env variable is not set. Error: {e}")
+        Err(_) => 8080
     };
     println!("Server up at port numbrer :{port}. Happy coding!");
 

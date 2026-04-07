@@ -1,4 +1,4 @@
-FROM rust:alpine3.16 AS builder
+FROM rust:1.94-alpine3.21 AS builder
 
 ARG APP_NAME="default-cargo-watch-app-name"
 ENV APP_NAME=${APP_NAME}
