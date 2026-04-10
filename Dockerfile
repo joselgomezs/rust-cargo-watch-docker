@@ -7,6 +7,8 @@ WORKDIR /app/${APP_NAME}
 COPY ./Cargo.toml ./Cargo.toml
 COPY ./src ./src
 
+RUN --mount=type=secret,id=TEST_SECRET \
+    sh -c 'export TEST_SECRET=$(cat /run/secrets/TEST_SECRET) && echo $TEST_SECRET'
 RUN apk add --no-cache musl-dev
 RUN cargo install cargo-watch
 
